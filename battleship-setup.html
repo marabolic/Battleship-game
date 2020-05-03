@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="battleship-style.css">
+    <script src = "battleship-setup.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Battleship Setup</title>
+</head>
+<body onload="setHeading(1)"> 
+    <h1 id="headPlayer"></h1>
+    <table>
+        <tr>
+            <td>   </td>
+            <td> A </td>
+            <td> B </td>
+            <td> C </td>
+            <td> D </td>
+            <td> E </td>
+            <td> F </td>
+            <td> G </td>
+            <td> H </td>
+            <td> I </td>
+            <td> J </td>
+        </tr>
+        <tr> 
+            <td> 0 </td>
+            <td> <div class="field" id="00"> </div> </td>
+            <td> <div class="field" id="01"> </div> </td>
+            <td> <div class="field" id="02"> </div> </td>
+            <td> <div class="field" id="03"> </div> </td>
+            <td> <div class="field" id="04"> </div> </td>
+            <td> <div class="field" id="05"> </div> </td>
+            <td> <div class="field" id="06"> </div> </td>
+            <td> <div class="field" id="07"> </div> </td>
+            <td> <div class="field" id="08"> </div> </td>
+            <td> <div class="field" id="09"> </div> </td>
+        </tr>
+        <tr>
+            <td> 1 </td>
+            <td> <div class="field" id="10"> </div> </td>
+            <td> <div class="field" id="11"> </div> </td>
+            <td> <div class="field" id="12"> </div> </td>
+            <td> <div class="field" id="13"> </div> </td>
+            <td> <div class="field" id="14"> </div> </td>
+            <td> <div class="field" id="15"> </div> </td>
+            <td> <div class="field" id="16"> </div> </td>
+            <td> <div class="field" id="17"> </div> </td>
+            <td> <div class="field" id="18"> </div> </td>
+            <td> <div class="field" id="19"> </div> </td>
+        </tr>
+
+        <tr>
+            <td> 2 </td>
+            <td> <div class="field" id="20"> </div> </td>
+            <td> <div class="field" id="21"> </div> </td>
+            <td> <div class="field" id="22"> </div> </td>
+            <td> <div class="field" id="23"> </div> </td>
+            <td> <div class="field" id="24"> </div> </td>
+            <td> <div class="field" id="25"> </div> </td>
+            <td> <div class="field" id="26"> </div> </td>
+            <td> <div class="field" id="27"> </div> </td>
+            <td> <div class="field" id="28"> </div> </td>
+            <td> <div class="field" id="29"> </div> </td>
+        </tr>
+        <tr>
+            <td> 3 </td>
+            <td> <div class="field" id="30"> </div> </td>
+            <td> <div class="field" id="31"> </div> </td>
+            <td> <div class="field" id="32"> </div> </td>
+            <td> <div class="field" id="33"> </div> </td>
+            <td> <div class="field" id="34"> </div> </td>
+            <td> <div class="field" id="35"> </div> </td>
+            <td> <div class="field" id="36"> </div> </td>
+            <td> <div class="field" id="37"> </div> </td>
+            <td> <div class="field" id="38"> </div> </td>
+            <td> <div class="field" id="39"> </div> </td>
+        </tr>
+        <tr>
+            <td> 4 </td>
+            <td> <div class="field" id="40"> </div> </td>
+            <td> <div class="field" id="41"> </div> </td>
+            <td> <div class="field" id="42"> </div> </td>
+            <td> <div class="field" id="43"> </div> </td>
+            <td> <div class="field" id="44"> </div> </td>
+            <td> <div class="field" id="45"> </div> </td>
+            <td> <div class="field" id="46"> </div> </td>
+            <td> <div class="field" id="47"> </div> </td>
+            <td> <div class="field" id="48"> </div> </td>
+            <td> <div class="field" id="49"> </div> </td>
+        </tr>
+        <tr>
+            <td> 5 </td>
+            <td> <div class="field" id="50"> </div> </td>
+            <td> <div class="field" id="51"> </div> </td>
+            <td> <div class="field" id="52"> </div> </td>
+            <td> <div class="field" id="53"> </div> </td>
+            <td> <div class="field" id="54"> </div> </td>
+            <td> <div class="field" id="55"> </div> </td>
+            <td> <div class="field" id="56"> </div> </td>
+            <td> <div class="field" id="57"> </div> </td>
+            <td> <div class="field" id="58"> </div> </td>
+            <td> <div class="field" id="59"> </div> </td>
+        </tr>
+        <tr>
+            <td> 6 </td>
+            <td> <div class="field" id="60"> </div> </td>
+            <td> <div class="field" id="61"> </div> </td>
+            <td> <div class="field" id="62"> </div> </td>
+            <td> <div class="field" id="63"> </div> </td>
+            <td> <div class="field" id="64"> </div> </td>
+            <td> <div class="field" id="65"> </div> </td>
+            <td> <div class="field" id="66"> </div> </td>
+            <td> <div class="field" id="67"> </div> </td>
+            <td> <div class="field" id="68"> </div> </td>
+            <td> <div class="field" id="69"> </div> </td>
+        </tr>
+        <tr>
+            <td> 7 </td>
+            <td> <div class="field" id="70"> </div> </td>
+            <td> <div class="field" id="71"> </div> </td>
+            <td> <div class="field" id="72"> </div> </td>
+            <td> <div class="field" id="73"> </div> </td>
+            <td> <div class="field" id="74"> </div> </td>
+            <td> <div class="field" id="75"> </div> </td>
+            <td> <div class="field" id="76"> </div> </td>
+            <td> <div class="field" id="77"> </div> </td>
+            <td> <div class="field" id="78"> </div> </td>
+            <td> <div class="field" id="79"> </div> </td>
+        </tr>
+        <tr>
+            <td> 8 </td>
+            <td> <div class="field" id="80"> </div> </td>
+            <td> <div class="field" id="81"> </div> </td>
+            <td> <div class="field" id="82"> </div> </td>
+            <td> <div class="field" id="83"> </div> </td>
+            <td> <div class="field" id="84"> </div> </td>
+            <td> <div class="field" id="85"> </div> </td>
+            <td> <div class="field" id="86"> </div> </td>
+            <td> <div class="field" id="87"> </div> </td>
+            <td> <div class="field" id="88"> </div> </td>
+            <td> <div class="field" id="89"> </div> </td>
+        </tr>
+        <tr>
+            <td> 9 </td>
+            <td> <div class="field" id="90"> </div> </td>
+            <td> <div class="field" id="91"> </div> </td>
+            <td> <div class="field" id="92"> </div> </td>
+            <td> <div class="field" id="93"> </div> </td>
+            <td> <div class="field" id="94"> </div> </td>
+            <td> <div class="field" id="95"> </div> </td>
+            <td> <div class="field" id="96"> </div> </td>
+            <td> <div class="field" id="97"> </div> </td>
+            <td> <div class="field" id="98"> </div> </td>
+            <td> <div class="field" id="99"> </div> </td>
+        </tr>
+    </table>
+
+    <td> Ships of size one left: </td> 
+    <td><output id="sizeOne"></td>
+    <br>
+    <td> Ships of size two left: </td>
+    <td><output id="sizeTwo"></td></output>
+    <br>
+    <td> Ships of size three left: </td>
+    <td><output id="sizeThree"></td>
+    <br>
+    <td> Ships of size four left: </td>
+    <td><output id="sizeFour"></td>
+
+</body>
+</html>
