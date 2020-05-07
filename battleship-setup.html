@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="battleship-style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
     <script src = "battleship-setup.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+
     <title>Battleship Setup</title>
 </head>
-<body onload="setHeading(1)"> 
+<body onload="setPage(1)"> 
     <h1 id="headPlayer"></h1>
     <table>
         <tr>
@@ -157,17 +159,27 @@
         </tr>
     </table>
 
-    <td> Ships of size one left: </td> 
-    <td><output id="sizeOne"></td>
-    <br>
-    <td> Ships of size two left: </td>
-    <td><output id="sizeTwo"></td></output>
-    <br>
-    <td> Ships of size three left: </td>
-    <td><output id="sizeThree"></td>
-    <br>
-    <td> Ships of size four left: </td>
-    <td><output id="sizeFour"></td>
+
+    <table>
+        <tr>
+            <td> Ships of size one left: </td> 
+            <td><h4 id="sizeOne"></h4></td>
+        </tr>
+        <tr>
+            <td> Ships of size two left: </td>
+            <td><h4 id="sizeTwo"></h4></td></output>
+        <tr>
+            <td> Ships of size three left: </td>
+            <td><h4 id="sizeThree"></h4></td>
+        </tr>
+        <tr>
+            <td> Ships of size four left: </td>
+            <td><h4 id="sizeFour"></h4></td>
+        </tr>
+    </table>
+
+
+    <div id="podaci"> </div>
 
 </body>
 </html>
