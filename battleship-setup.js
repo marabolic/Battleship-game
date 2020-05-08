@@ -61,6 +61,7 @@ var data = {
                     && data.sizeThreeSunk == 2 && data.sizeFourSunk == 1){
                         var myJSON = JSON.stringify(data);
                         localStorage.setItem("data", myJSON);
+                        alert(localStorage.getItem("data"));
                         window.open("./battleship-game.html", "_self");
                 }
             }
