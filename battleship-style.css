@@ -1,4 +1,10 @@
 
+.field{
+    background-color: palegoldenrod;
+    width: 40px;
+    height: 40px;
+}
+
 .field1{
     background-color: palegoldenrod;
     width: 40px;
